@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAIMAO® — 全栈开发工程师 · Full-Stack Engineer</title>
+  <meta name="description" content="LAIMAO — 全站开发工程师个人品牌站。从像素到服务器，负责完整产品链路：前端工程、后端架构、数据库设计、DevOps 与 AI 应用。" />
+  <meta name="theme-color" content="#17120e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="LAIMAO® — 全栈开发工程师 · Full-Stack Engineer" />
+  <meta property="og:description" content="从像素到服务器，一个人就是一支队伍：前端工程、后端架构、数据库设计、DevOps 与 AI 应用。" />
+  <!-- TODO: 部署后把 og:image 换成正式域名的绝对 URL -->
+  <meta property="og:image" content="/assets/img/work-01.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LAIMAO® — 全栈开发工程师 · Full-Stack Engineer" />
+  <meta name="twitter:description" content="从像素到服务器，一个人就是一支队伍。" />
+  <!-- TODO: 确认正式域名，若非 laimao.dev 请同步替换 canonical / og:url / og:image -->
+  <link rel="canonical" href="https://laimao.dev/" />
+  <meta property="og:url" content="https://laimao.dev/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2317120E'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23E8523B' stroke-width='9'/%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+  <link href="https://fonts.loli.net/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "LAIMAO",
+    "jobTitle": "全栈开发工程师",
+    "email": "hello@laimao.dev",
+    "knowsAbout": ["前端工程", "后端架构", "数据库设计", "DevOps", "AI 应用"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- 阅读进度条 -->
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- 自定义光标 -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- 胶片颗粒 -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark" aria-hidden="true"></span>
+      LAIMAO<sup>®</sup>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="主导航">
+      <a href="#about" class="nav__link"><em>01</em>关于</a>
+      <a href="#stack" class="nav__link"><em>02</em>技术</a>
+      <a href="#works" class="nav__link"><em>03</em>作品</a>
+      <a href="#process" class="nav__link"><em>04</em>流程</a>
+      <a href="#contact" class="nav__link"><em>05</em>联系</a>
+    </nav>
+    <a href="#contact" class="nav__cta magnetic">聊聊项目</a>
+    <button class="nav__burger" id="navBurger" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <canvas id="shaderCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero__meta hero__meta--tl mono">
+      ©2026 LAIMAO<br />FULL-STACK PORTFOLIO
+    </div>
+    <div class="hero__meta hero__meta--tr mono">
+      BASED IN CHINA · GMT+8<br />BUILD v3.2.1 — STABLE
+    </div>
+
+    <div class="hero__title-wrap">
+      <p class="hero__kicker mono reveal">// 从像素到服务器 · PIXELS → SERVERS</p>
+      <h1 class="hero__title">
+        <span class="hero__line reveal"><span class="hero__solid reveal--mask">FULL·STACK</span></span>
+        <span class="hero__line reveal"><span class="hero__stroke reveal--mask">ENGINEER</span></span>
+      </h1>
+      <p class="hero__sub reveal">
+        你好，我是 <strong>LAIMAO</strong> — 全站开发工程师。<br class="br-mobile" />
+        一个人，就是一支队伍。
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#works" class="btn btn--solid magnetic">查看作品 <span class="btn__arrow">→</span></a>
+        <a href="#contact" class="btn btn--ghost magnetic">联系我</a>
+      </div>
+    </div>
+
+    <div class="hero__vertical mono" aria-hidden="true">全站开发工程师</div>
+
+    <div class="hero__scroll mono" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      SCROLL
+    </div>
+  </section>
+
+  <!-- 跑马灯 -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">FULL-STACK DEVELOPMENT <i>✦</i> 前端工程 <i>✦</i> 后端架构 <i>✦</i> 数据库设计 <i>✦</i> DEVOPS <i>✦</i> 小程序 <i>✦</i> AI 应用 <i>✦</i></span>
+      <span class="marquee__item">FULL-STACK DEVELOPMENT <i>✦</i> 前端工程 <i>✦</i> 后端架构 <i>✦</i> 数据库设计 <i>✦</i> DEVOPS <i>✦</i> 小程序 <i>✦</i> AI 应用 <i>✦</i></span>
+    </div>
+  </div>
+
+  <!-- ============ 01 关于 ============ -->
+  <section class="section about" id="about">
+    <div class="section__head reveal">
+      <span class="section__no mono">[01]</span>
+      <span class="section__label mono">ABOUT</span>
+      <h2 class="section__title">关于<em>我</em></h2>
+    </div>
+
+    <div class="about__grid">
+      <figure class="about__portrait reveal" id="portraitTilt">
+        <span class="about__circle" aria-hidden="true"></span>
+        <svg class="about__ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="ringPath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0" />
+          </defs>
+          <text class="about__ring-text">
+            <textPath href="#ringPath">FULL-STACK ENGINEER · LAIMAO · 从像素到服务器 ·&nbsp;</textPath>
+          </text>
+        </svg>
+        <img src="assets/img/profile.webp" alt="LAIMAO 的头像插画" width="732" height="979" loading="lazy" decoding="async" />
+      </figure>
+
+      <div class="about__body">
+        <p class="about__lede reveal">
+          你好，我是 <strong>LAIMAO</strong>。一名把「完整交付」当作信仰的全站开发工程师 ——
+          <em>从第一像素到最后一行部署脚本</em>，整条产品链路我都亲手负责。
+        </p>
+        <p class="reveal">
+          白天写 Vue 与 React，把界面打磨到像素级；晚上写 Node 与 Go，
+          让接口在高压下依然优雅；顺手把 Docker、CI/CD 和监控告警收拾得服服帖帖。
+          我相信好的工程是<strong>设计与逻辑的双向奔赴</strong>—— 界面有性格，代码有温度。
+        </p>
+        <p class="reveal">
+          如果你的产品需要一个「既能画稿子、又能扛住双十一」的人，
+          那我们大概率聊得来。
+        </p>
+
+        <ul class="about__tags mono reveal">
+          <li># 独立交付</li>
+          <li># 性能洁癖</li>
+          <li># 细节控</li>
+          <li># 长期主义</li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="stats">
+      <li class="stats__item reveal">
+        <span class="stats__num"><b data-count="5">5</b>+</span>
+        <span class="stats__label mono">YEARS · 年开发经验</span>
+      </li>
+      <li class="stats__item reveal">
+        <span class="stats__num"><b data-count="40">40</b>+</span>
+        <span class="stats__label mono">PROJECTS · 交付项目</span>
+      </li>
+      <li class="stats__item reveal">
+        <span class="stats__num"><b data-count="12">12</b>+</span>
+        <span class="stats__label mono">STACKS · 技术栈</span>
+      </li>
+      <li class="stats__item reveal">
+        <span class="stats__num">∞</span>
+        <span class="stats__label mono">COFFEE · 杯咖啡</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ 02 技术栈 ============ -->
+  <section class="section stack" id="stack">
+    <div class="section__head reveal">
+      <span class="section__no mono">[02]</span>
+      <span class="section__label mono">STACK</span>
+      <h2 class="section__title">技术<em>栈</em></h2>
+    </div>
+
+    <div class="stack__grid">
+      <article class="stack__card reveal">
+        <span class="stack__no mono">S.01</span>
+        <h3 class="stack__name">前端<small>FRONTEND</small></h3>
+        <p class="stack__desc">像素级还原，60fps 动效洁癖，让界面「长出性格」。</p>
+        <ul class="stack__tags mono">
+          <li>Vue</li><li>React</li><li>TypeScript</li><li>小程序</li><li>Tailwind</li><li>Vite</li>
+        </ul>
+      </article>
+      <article class="stack__card reveal">
+        <span class="stack__no mono">S.02</span>
+        <h3 class="stack__name">后端<small>BACKEND</small></h3>
+        <p class="stack__desc">高并发不慌，烂代码不留。API 设计是我的第二母语。</p>
+        <ul class="stack__tags mono">
+          <li>Node.js</li><li>Go</li><li>Python</li><li>NestJS</li><li>GraphQL</li><li>WebSocket</li>
+        </ul>
+      </article>
+      <article class="stack__card reveal">
+        <span class="stack__no mono">S.03</span>
+        <h3 class="stack__name">数据<small>DATA</small></h3>
+        <p class="stack__desc">会写索引，更会「不写查询」。让数据安安静静地快。</p>
+        <ul class="stack__tags mono">
+          <li>MySQL</li><li>PostgreSQL</li><li>Redis</li><li>MongoDB</li><li>ClickHouse</li><li>ETL</li>
+        </ul>
+      </article>
+      <article class="stack__card reveal">
+        <span class="stack__no mono">S.04</span>
+        <h3 class="stack__name">云与运维<small>DEVOPS</small></h3>
+        <p class="stack__desc">一条流水线交付到底：构建、部署、监控、告警全自动。</p>
+        <ul class="stack__tags mono">
+          <li>Docker</li><li>K8s</li><li>CI/CD</li><li>Nginx</li><li>Linux</li><li>Grafana</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 03 作品 ============ -->
+  <section class="section works" id="works">
+    <div class="section__head reveal">
+      <span class="section__no mono">[03]</span>
+      <span class="section__label mono">SELECTED WORKS</span>
+      <h2 class="section__title">精选<em>作品</em></h2>
+    </div>
+
+    <div class="works__list">
+      <article class="work reveal">
+        <span class="work__no mono">W.01</span>
+        <div class="work__media">
+          <img src="assets/img/work-01.jpg" alt="星云 SaaS 数据平台界面" loading="lazy" decoding="async" width="1024" height="768" />
+        </div>
+        <div class="work__info">
+          <h3 class="work__title">星云 SaaS 数据平台</h3>
+          <p class="work__desc">B 端数据可视化中台，50+ 图表组件，首屏渲染压进 1s。</p>
+          <ul class="work__tags mono"><li>VUE 3</li><li>TS</li><li>ECHARTS</li><li>2025</li></ul>
+        </div>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </article>
+
+      <article class="work reveal">
+        <span class="work__no mono">W.02</span>
+        <div class="work__media">
+          <img src="assets/img/work-02.jpg" alt="崛起商城小程序界面" loading="lazy" decoding="async" width="1024" height="768" />
+        </div>
+        <div class="work__info">
+          <h3 class="work__title">崛起商城 · 小程序</h3>
+          <p class="work__desc">电商小程序全栈方案，秒杀场景扛住 10w+ QPS。</p>
+          <ul class="work__tags mono"><li>TARO</li><li>NESTJS</li><li>REDIS</li><li>2024</li></ul>
+        </div>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </article>
+
+      <article class="work reveal">
+        <span class="work__no mono">W.03</span>
+        <div class="work__media">
+          <img src="assets/img/work-03.jpg" alt="墨问 AI 工作台界面" loading="lazy" decoding="async" width="1024" height="768" />
+        </div>
+        <div class="work__info">
+          <h3 class="work__title">墨问 AI 工作台</h3>
+          <p class="work__desc">LLM 驱动的效率工具，流式对话 + RAG 知识库 + 插件生态。</p>
+          <ul class="work__tags mono"><li>REACT</li><li>GO</li><li>RAG</li><li>2026</li></ul>
+        </div>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </article>
+
+      <article class="work reveal">
+        <span class="work__no mono">W.04</span>
+        <div class="work__media">
+          <img src="assets/img/work-04.jpg" alt="瞭望监控台界面" loading="lazy" decoding="async" width="1024" height="768" />
+        </div>
+        <div class="work__info">
+          <h3 class="work__title">瞭望 · 可观测性平台</h3>
+          <p class="work__desc">日志、指标、链路三位一体，故障定位从小时级到分钟级。</p>
+          <ul class="work__tags mono"><li>CLICKHOUSE</li><li>GRAFANA</li><li>K8S</li><li>2025</li></ul>
+        </div>
+        <span class="work__arrow" aria-hidden="true">↗</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 04 流程 ============ -->
+  <section class="section process" id="process">
+    <div class="section__head reveal">
+      <span class="section__no mono">[04]</span>
+      <span class="section__label mono">PROCESS</span>
+      <h2 class="section__title">合作<em>流程</em></h2>
+    </div>
+
+    <ol class="process__steps">
+      <li class="process__step reveal">
+        <span class="process__no mono">01</span>
+        <h3>需求梳理<small>DISCOVER</small></h3>
+        <p>把你的想法拆成清晰的功能地图，砍掉伪需求，留下真价值。</p>
+      </li>
+      <li class="process__step reveal">
+        <span class="process__no mono">02</span>
+        <h3>方案设计<small>DESIGN</small></h3>
+        <p>界面原型 + 技术选型一次到位，交互与架构同频共振。</p>
+      </li>
+      <li class="process__step reveal">
+        <span class="process__no mono">03</span>
+        <h3>开发迭代<small>DEVELOP</small></h3>
+        <p>周更可点版本，进度透明；每一行提交都有据可查。</p>
+      </li>
+      <li class="process__step reveal">
+        <span class="process__no mono">04</span>
+        <h3>交付上线<small>DELIVER</small></h3>
+        <p>自动化部署 + 监控告警，交付的不是代码，是安心的产品。</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ 05 联系 ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__head reveal">
+      <span class="section__no mono">[05]</span>
+      <span class="section__label mono">CONTACT</span>
+      <h2 class="section__title">联系<em>我</em></h2>
+    </div>
+
+    <div class="contact__hero reveal">
+      <p class="contact__cn">有项目想聊聊？</p>
+      <p class="contact__en" aria-hidden="true">LET'S BUILD<br /><span>SOMETHING</span></p>
+      <div class="contact__mail-row">
+        <a href="mailto:hello@laimao.dev" class="contact__mail magnetic">
+          hello@laimao.dev <span aria-hidden="true">↗</span>
+        </a>
+        <button class="contact__copy mono" id="copyMail" type="button" aria-label="复制邮箱地址">复制邮箱</button>
+      </div>
+      <!-- TODO: 替换为真实主页链接 -->
+      <ul class="contact__socials mono">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></li>
+        <li><a href="https://juejin.cn/" target="_blank" rel="noopener noreferrer">掘金 ↗</a></li>
+        <li><a href="https://space.bilibili.com/" target="_blank" rel="noopener noreferrer">B 站 ↗</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X / TWITTER ↗</a></li>
+      </ul>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <span class="mono">©2026 LAIMAO · 全站开发工程师</span>
+    <span class="mono footer__mid">HANDCRAFTED — VANILLA HTML / CSS / WEBGL · ZERO DEPENDENCIES</span>
+    <a href="#top" class="mono footer__top">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="js/shader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

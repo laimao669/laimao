@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>404 — 页面未找到 · LAIMAO®</title>
+  <meta name="theme-color" content="#17120e" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2317120E'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23E8523B' stroke-width='9'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+  <link href="https://fonts.loli.net/css2?family=Anton&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background: var(--ink);
+      color: var(--paper);
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem var(--pad-x);
+    }
+    .e404__code {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      color: rgba(244, 238, 226, 0.5);
+      margin-bottom: 1.6rem;
+    }
+    .e404__code em {
+      font-style: normal;
+      color: var(--verm);
+    }
+    .e404__title {
+      font-family: var(--disp);
+      font-weight: 400;
+      font-size: clamp(5rem, 22vw, 14rem);
+      line-height: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+    .e404__title span {
+      color: transparent;
+      -webkit-text-stroke: 3px var(--verm);
+    }
+    .e404__desc {
+      margin-top: 1.8rem;
+      color: rgba(244, 238, 226, 0.75);
+      font-size: clamp(1rem, 1.4vw, 1.15rem);
+    }
+    .e404__back {
+      margin-top: 2.6rem;
+    }
+  </style>
+</head>
+<body>
+  <p class="e404__code mono">ERROR <em>//</em> 404 <em>//</em> NOT FOUND</p>
+  <h1 class="e404__title">4<span>0</span>4</h1>
+  <p class="e404__desc">这个页面被我部署到了别的维度。<br />回首页看看真实存在的作品吧。</p>
+  <div class="e404__back">
+    <a href="/" class="btn btn--solid">返回首页 <span class="btn__arrow">→</span></a>
+  </div>
+</body>
+</html>
