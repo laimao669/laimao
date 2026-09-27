@@ -304,7 +304,7 @@
   /* ---------- 复制邮箱 ---------- */
   var copyBtn = document.getElementById("copyMail");
   if (copyBtn) {
-    var MAIL = "hello@laimao.dev";
+    var MAIL = "hello@laimao.org";
     var copyTimer = null;
 
     function markCopied() {
